@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Large downloaded court documents
+downloaded_pdfs/
+
+# Runtime/generated files
+scraper_runs.log
+
+# ZIP files
+*.zip
+
+# Local cache
+*.cache
