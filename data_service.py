@@ -15,11 +15,11 @@ from psycopg2.extras import RealDictCursor
 from court_mapper import HIGH_COURTS
 
 POSTGRES_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),
-    "port": int(os.getenv("DB_PORT", 5432)),
-    "database": os.getenv("DB_NAME", "ecourts_scraper"),
-    "user": os.getenv("DB_USER", "postgres"),
-    "password": os.getenv("DB_PASSWORD", "shs2004")
+    "host": os.getenv("DB_HOST"),
+    "port": int(os.getenv("DB_PORT", "5432")),
+    "database": os.getenv("DB_NAME"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD")
 }
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
